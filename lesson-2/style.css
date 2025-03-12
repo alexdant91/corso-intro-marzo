@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    transition: all ease-in-out 0.2s;
+}
+
+body, html {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button.btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 1px;
+    border: none;
+    font-weight: 500;
+    color: white
+}
+
+button.btn.btn-primary {
+    background-color: rgba(33, 116, 234, 1);
+}
+
+button.btn.btn-primary:hover {
+    background-color: rgba(33, 116, 234, 0.7);
+}
+
+button.btn.btn-secondary {
+    background-color: rgba(51, 65, 85, 1);
+}
+
+button.btn.btn-secondary:hover {
+    background-color: rgba(51, 65, 85, 0.7);
+}
+
+nav {
+    height: 80px;
+    background-color: #101d2d;
+    justify-content: center;
+}
+
+nav * {
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 100%;
+    max-width: 1152px;
+    padding: 0 24px;
+}
+
+nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-container .nav__left {
+    display: flex;
+    gap: 40px;
+}
+
+nav .nav-container .nav__left .nav__left-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav .nav-container .nav__left .nav__left-menu .nav__left-menu-item:hover a {
+    color: #2174ea;
+}
+
+nav .nav-container .nav__left .nav__left-logo img {
+    width: 32px;
+    height: 32px;
+}
+
+nav .nav-container .nav__right {
+    display: flex;
+    gap: 40px;
+}
+
+nav .nav-container .nav__right .nav__right-action:not(.hover-alternative):hover a {
+    color: #2174ea;
+}
+
+nav .nav-container .nav__right .nav__right-action.hover-alternative:hover a {
+    color: white;
+}
+
+header {
+    padding: 60px 0 160px 0;
+    background-color: #101d2d;
+    justify-content: center;
+    clip-path: polygon(0 0, 5760px 0, 5760px calc(100% - 352px), 0 100%);
+}
+
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header__left h1 {
+    font-size: 4rem;
+    letter-spacing: -0.01em;
+    color: white;
+    line-height: 4.4rem;
+}
+
+header .header__left p {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    width: 490px;
+    line-height: 2rem;
+    margin: 20px 0;
+}
+
+header .header__left .header__left-cta {
+    display: flex;
+    gap: 20px;
+}
+
+header .header__right .header__right-back {
+    width: 540px;
+    height: 405px;
+    border: 2px solid #334155;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+header .header__right img {
+    width: 100%;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
